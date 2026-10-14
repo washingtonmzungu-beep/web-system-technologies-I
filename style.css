@@ -1,0 +1,69 @@
+/*General page styling*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background-color:#f4f6f8;
+    color:#222;
+}
+/*Header*/
+header{
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+header p {
+    margin-bottom: 0;
+}
+/*navigation*/
+nav {
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+}
+nav a {
+    color:white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover{
+    color:lightblue;
+}
+/* main content*/
+main{
+width:90%;
+max-width: 1100px;
+margin:30px auto;
+}
+.welcome{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,1);
+}
+.welcome  h2{
+        color:blue;
+
+}
+.welcome li{
+    margin: 12px 0;
+}
+.welcome a {
+    color:lightblue;
+    text-decoration: none;
+}
+.welcome a:hover{
+    text-decoration: underline;
+}
+/*Footer*/
+footer {
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

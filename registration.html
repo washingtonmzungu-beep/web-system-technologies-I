@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="#" method="post">
+        <!--Personal Information-->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br<><br>
+
+            <label for="regno">Registration Number:</label>
+            <input type="text" id="regno" name="regno" required>
+            <br><br>
+
+            <label for="dateofbirth">Date Of Birth:</label>
+            <input type="date" id="dateofbirth" name="dateofbirth" required>
+            <br><br>
+
+            <label >Gender</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male"> Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="others" name="gender" value="others">
+            <label for="others">Others</label>
+            <br><br>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+           <br><br>
+           <label for="phone">Phone Number: </label>
+           <input type="text" id="phone" name="phone" required>
+           <br><br>
+        </fieldset>
+
+        <br>
+        <!--Academic Information-->
+        <fieldset>
+            <legend>Academic Information</legend>
+            <label for="programme">Programme:</label>
+            <select id="programme" name="programme">
+                <option value=" ">--Selest Programme--</option>
+                <option value="IT">Information Technology</option>
+                <option value="CS">Computer Science</option>
+                <option value="SE"> Software Engeenering</option>
+                <option value="IS">Information Systems</option>
+            </select>
+                <br><br>
+                <label for="year">Year of Study:</label>
+                <input type="number" id="year" name="year" min="1" max="6">
+                <br><br>
+                <label for="semester">Semester:</label>
+                <select id="semester" name="semester">
+                    <option value=" ">--Select Semester--</option>
+                    <option value=" ">Semester 1</option>
+                    <option value=" ">semester 2</option>
+                </select>
+                <br><br>
+                <label for="mode">Mode Of Study:</label>
+                <select id="mode" name="mode">
+<option value=" "> --select mode--</option>
+<option value="regular">Regular</option>
+<option value="part-time">Part-time</option>
+<option value="distance">Distance Learning</option>
+<option value="online">Online</option>
+                </select>
+                <br><br>
+        </fieldset>
+        <br>
+        <!--Adress Information-->
+        <fieldset>
+<legend>Address Information</legend>
+<label for="county">County</label>
+<input type="text" id="county" name="county">
+<br><br>
+<label for="town">Town</label>
+<input type="text" id="town" name="town">
+<br><br>
+<label for="postal">Postal Address</label>
+<input type="text" id="postal" name="postal">
+<br><br>
+        </fieldset>
+        <br>
+        <!--Account Information-->
+        <legend>Account Information </legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+<br><br>
+<label for="passward">Passward</label>
+<input type="passward" id="confirm" name="confirm" required>
+<br><br>
+    </fieldset>
+    <br>
+    <!--Other Information-->
+    <fieldset>
+<legend>Other Information</legend>
+<label>Units to Register</label>
+<br>
+<input type="checkbox" id="web" name="units" value="Web Systems">
+<label for="web">Web Systems</label>
+<br>
+<input type="checkbox" id="programming" name="units" value="programming">
+<label for="programming">Programming</label>
+<br>
+<input type="checkbox" id="database" name="units" value="database">
+<label for="database">Database</label>
+<br>
+<input type="checkbox" id="networking" name="units" value="networking">
+<label for="networking">Networking</label>
+<br><br>
+<label for="communication">Preffered Communication Method</label>
+<select id="communication" name="comunication">
+    <option value=" ">--Select Method--</option>
+    <option value="email">Email</option>
+    <option value="phone">Phone</option>
+    <option value="sms">SMS</option>
+</select>
+<br><br>
+<label for="comments">Comments</label>
+<br>
+<textarea id="comments" name="comments" rows="5" cols="50"
+placeholder="Enter your comments here"></textarea>
+<br><br>
+    </fieldset>
+    <br>
+    <!--Buttons-->
+    <button type="submit">Submit</button>
+<button type="reset">Reset</button>
+    </form>
+</body>
+<footer>SIT/2021/2025 Edwin Odhiambo</footer>
+</html>

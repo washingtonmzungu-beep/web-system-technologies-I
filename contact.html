@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us : School Of Computing and Information Technology </title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: whitesmoke;
+margin: 0;
+padding: 0;
+}
+header {
+background-color: red;
+color: white;
+text-align: center;
+padding: 25px;
+}
+header h1 {
+margin: 0;
+}
+header p {
+    margin-top : 8px;
+}
+.container {
+width: 60%;
+margin: 30px auto;
+background-color: white;
+padding:30px;
+border-radius: 8px;
+box-shadow: 0 0 10px #ccc;
+}
+h2 {
+text-align: center;
+color: #003366;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing:border-box;
+}
+textarea {
+    height: 150px;
+    resize:vertical;
+}
+.radio-group {
+    margin-top: 8px;
+}
+.radio-group label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 5px;
+}
+.agreement {
+    margin-top:20px;
+}
+.agreement input {
+    width:auto;
+    margin-right:8px;
+}
+.agreement label {
+    display: inline;
+    font-weight: normal;
+}
+
+.buttons {
+    margin-top: 25px;
+    text-align: center;
+}
+.buttons input {
+    width:auto;
+    padding: 12px 25px;
+    margin:5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit {
+    background-color: #003366;
+    color: white;
+}
+
+reset{
+background-color:#777;
+color: white;
+}
+.submit:hover {
+    background-color: #0055a5;
+}
+
+.reset:hover {
+    background-color: #555;
+}
+footer{
+    background-color:#003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+@media (max-width: 768px) {
+    .container{
+        width:89%;
+    }
+}
+</style>
+</head>
+<body>
+   
+    <header>
+        <h1>School of computing and information Science</h1>
+        <p>Online contact form</p>
+    </header>
+    <div class="container">
+<h2>Contact Us</h2>
+<form action="#"method="post">
+    <!--Full Name-->
+<label for="fullname">Full NAME:</label>
+<input type="text" id="fullname" name="fullname" placeholder="Enter your Full Name" minlength="4" maxlength="50" required>
+<!--Email address-->
+<label for="email">EMAIL ADDRESS:</label>
+<input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+<!--Phone Number-->
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" placeholder="e.g 0116189764" minlength="8" maxlength="14" required>
+<!--Subject-->
+<label for="subject">Subject</label>
+<input type="text" id="subject" name="subject" placeholder="Enter the subject of enquiry" minlength="3"maxlength="99"required>
+<!--Category of Enquiry-->
+<label for="enquiry">Category of Enquiry</label>
+<select id="category" name="category" required>
+<option value=" ">--Select Category--</option>
+<option value="general">General Enquiry</option>
+<option value="admission">Admission</option>
+<option value="academic">Academic Program</option>
+<option value="examinations">Examinations</option>
+<option value="technical">Technical Support</option>
+<option value="other">Others</option>
+</select>
+<!--Preffered Contact Method-->
+<label>Preffered Contact Method:</label>
+<div class="radio group">
+    <input type="radio" id="contact-email" name="contact-method" value="phone">
+    <label for="contact-phone">Phone</label>
+    <input type="radio" id="contact-both" name="contact-method"  value=" both">
+    <label for="contact-both">Either Email or Phone</label>
+</div>
+<!--Message-->
+<label for="message">Message</label>
+<textarea id="message" name="message" placeholder="Enter your Message here" minlength="10"maxlength="99" required></textarea>
+<!--Agreement Checkbox-->
+<div class="agreement">
+    <input type="checkbox" id="agreement" name="agreement" required>
+    <label for="agreement">I agree to the processing of my information for the purpos of responding to my enquiry</label>
+</div>
+<!--Submit and Reset Button-->
+<div class="buttons">
+    <input type="submit" value="submit" class="submit">
+    <input type="reset" value="reset" class="reset">
+</div>
+</form>
+</div>
+<footer>
+    <p>School of Information Science</p>
+    <p>SIT/2021/2025 Edwin Odhiambo </p>
+</footer>
+
+</body>
+</html>
